@@ -1,0 +1,183 @@
+/* 
+f0ffff bg
+26538d bg navbar
+fff2ba textos
+a7d5f2 destaques/hover 
+
+fontes google
+- Abril Fatface / titulo
+- Nabla / index aside
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0ffff;
+    margin: 0;
+}
+
+
+/* fontes */
+
+.nabla,
+.tituloIndex {
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+}
+
+.abril-fatface-regular, .tituloIndex2 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* index */
+
+aside {
+    background-color: #26538d;
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    padding: 40px 30px;
+    inset: 0 auto 0 0;
+}
+
+.ancoras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.ancoras a {
+    color: #fff2ba;
+    text-decoration: none;
+}
+
+.ancoras a:hover {
+    font-weight: bold;
+    color: #a7d5f2;
+}
+
+.ancoras i {
+    margin-right: 8px;
+}
+
+.funcionalidade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: #a7d5f2;
+    border-top: #000 solid 2px;
+}
+
+.funcionalidade span {
+    background-color: #f0ffff;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #26538d;
+}
+
+.funcionalidade span:hover {
+    background-color: #a7d5f2;
+}
+
+.tituloIndex {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainIndex {
+    margin-left: 280px;
+}
+
+.tituloIndex2 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.mainIndex p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.content a {
+    background-color: #26538d;
+    padding: 35px;
+    border: #000 solid 3px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff2ba;
+}
+
+.content a:hover {
+    font-weight: bold;
+    color: #a7d5f2;
+} 
+
+
+/* navbar */
+
+.navbar {
+    background-color: #26538d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+}
+
+.navbar a {
+    color: #26538d;
+    background-color: #f0ffff;
+    border-radius: 22px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #a7d5f2;
+    font-weight: bold;
+}
+
+.botoes span {
+    color: #26538d;
+    background-color: #f0ffff;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+}
+
+.botoes span:hover {
+    background-color: #a7d5f2;
+}
