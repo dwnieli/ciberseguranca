@@ -16,7 +16,6 @@ function gerarSenha() {
 function copiarSenha() {
   const senha = document.getElementById('password').textContent;
 
-  // não copia se ainda for o placeholder
   if (senha === '***********') return;
 
   navigator.clipboard.writeText(senha).then(() => {
