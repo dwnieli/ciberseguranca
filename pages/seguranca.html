@@ -12,14 +12,18 @@
 
     <!-- estilos -->
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
+            <a href="../index.html">Página Inicial</a>
+            <a href="./sobre.html">Sobre</a>
+            <a href="./contato.html">Contato</a>
         </div>
 
         <div class="botoes">
@@ -28,8 +32,17 @@
             <span class="material-symbols-outlined">text_decrease</span>
             <span class="material-symbols-outlined">dark_mode</span>
         </div>
-
     </nav>
+
+    <main>
+        <h1 class="title">Gerador de senhas</h1>
+        <p class="senhap">Clique para gerar uma senha forte aleatória</p>
+        <span class="password" id="password" onclick="gerarSenha()">***********</span>
+        <div class="botaocopiar">
+        <button id="copiar" onclick="copiarSenha()">Copiar senha</button>
+        </div>
+    </main>
     
+    <script src="../js/script.js"></script>
 </body>
 </html>
