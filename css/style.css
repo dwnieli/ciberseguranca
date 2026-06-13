@@ -17,7 +17,24 @@ body {
 .title {
     text-align: center;
     font-size: 60px;
-    margin-top: 80px;
+    margin-top: 70px;
+}
+
+footer {
+    background-color: var(--highlight);
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    margin: 60px 0;
+}
+
+i {
+    margin-right: 10px;
 }
 
 
@@ -41,7 +58,7 @@ aside {
     inset: 0 auto 0 0;
 }
 
-.ancoras {
+.paginas {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -49,43 +66,38 @@ aside {
     margin-top: 80px;
 }
 
-.ancoras a {
+.paginas a {
     color: var(--text);
     text-decoration: none;
 }
 
-.ancoras a:hover {
-    font-weight: bold;
+.paginas a:hover {
     color: var(--highlight);
-}
-
-.ancoras i {
-    margin-right: 8px;
+    font-weight: bold;
 }
 
 .funcoes {
+    background-color: var(--highlight);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 70px;
     display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 16px;
-    background-color: var(--highlight);
-    border-top: #000 solid 2px;
+    justify-content: space-evenly;
+    padding: 18px;
 }
 
 .funcoes span {
     background-color: var(--bg-color);
+    color: var(--bg-nav);
     border-radius: 50%;
     font-size: 35px;
-    color: var(--bg-nav);
 }
 
 .funcoes span:hover {
-    background-color: var(--highlight);
+    background-color: var(--bg-nav);
+    color: var(--highlight);
 }
 
 .iconeIndex {
@@ -103,7 +115,6 @@ aside {
 }
 
 .mainIndex p {
-    font-size: 18px;
     text-align: center;
     padding: 0 100px;
 }
@@ -111,24 +122,25 @@ aside {
 .content {
     display: flex;
     justify-content: center;
-    gap: 100px;
     align-items: center;
+    gap: 100px;
     margin-top: 100px;
 }
 
 .content a {
     background-color: var(--bg-nav);
-    padding: 35px;
+    color: var(--text);
     border: #000 solid 3px;
-    border-radius: 30px;
+    border-radius: 40px;
+    padding: 30px;
     text-decoration: none;
     font-size: 22px;
-    color: var(--text);
 }
 
 .content a:hover {
+    background-color: var(--highlight);
+    color: var(--bg-nav);
     font-weight: bold;
-    color: var(--highlight);
 } 
 
 
@@ -140,8 +152,9 @@ aside {
     align-items: center;
     justify-content: space-evenly;
     position: sticky;
+    padding: 20px;
     top: 0;
-    padding: 15px;
+    z-index: 99999;
 }
 
 .navbar a {
@@ -164,7 +177,6 @@ aside {
     background-color: var(--bg-color);
     border-radius: 50%;
     padding: 8px;
-    margin: 5px;
 }
 
 .botoes span:hover {
@@ -199,4 +211,70 @@ aside {
 .botaocopiar {
     display: flex;
     justify-content: center;
+}
+
+
+/* contato */
+
+form {
+    margin: 0 350px;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.form input {
+    height: 30px;
+}
+
+.form input, textarea {
+    width: 70%;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botoes button {
+    width: 100px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+
+/* sobre  */
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.foto img {
+    border-radius: 50%;
+    border: var(--bg-nav) double 15px;
+    width: 350px;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    background-color: var(--bg-nav);
+    font-size: 35px;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+.links a {
+    color: var(--text);
+    text-decoration: none;
 }
