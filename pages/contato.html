@@ -13,11 +13,17 @@
 
     <!-- estilos -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
 
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -29,10 +35,10 @@
         </div>
 
         <div class="botoes">
-            <span class="material-symbols-outlined">text_increase</span>
-            <span class="material-symbols-outlined">rotate_auto</span>
-            <span class="material-symbols-outlined">text_decrease</span>
-            <span class="material-symbols-outlined">dark_mode</span>
+            <span class="material-symbols-outlined" onclick="aumentarFonte()">text_increase</span>
+            <span class="material-symbols-outlined" onclick="fonteNormal()">rotate_auto</span>
+            <span class="material-symbols-outlined" onclick="diminuirFonte()">text_decrease</span>
+            <span class="material-symbols-outlined mudarTema" onclick="mudarTema()">dark_mode</span>
         </div>
 
     </nav>
@@ -61,6 +67,11 @@
                 <textarea id="text" rows="5" placeholder="Digite sua mensagem aqui."></textarea>
             </div>
 
+            <div class="form">
+                <label for="arquivo">Anexar arquivo <i>(opcional):</i></label>
+                <input type="file" id="arquivo">
+            </div>
+
             <div class="botoes">
                 <button type="submit" onclick="alert('Página em construção.')">Enviar</button>
                 <button type="reset">Limpar</button>
@@ -71,6 +82,8 @@
     <div>
         <footer>© Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1</footer>
     </div>
+
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

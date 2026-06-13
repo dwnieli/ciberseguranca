@@ -23,3 +23,35 @@ function copiarSenha() {
     btn.textContent = 'Copiado!';
   });
 }
+
+// fontes
+
+function aumentarFonte() {
+  document.documentElement.classList.remove("textoNormal", "diminuirTexto")
+  document.documentElement.classList.add("aumentarTexto")
+}
+
+function fonteNormal() {
+  document.documentElement.classList.remove("aumentarTexto", "diminuirTexto")
+  document.documentElement.classList.add("textoNormal")
+}
+
+function diminuirFonte() {
+  document.documentElement.classList.remove("textoNormal", "aumentarTexto")
+  document.documentElement.classList.add("diminuirTexto")
+}
+
+
+// darkmode
+
+function mudarTema() {
+  document.documentElement.classList.toggle("darkmode")
+
+  const icone = document.querySelector(".material-symbols-outlined.mudarTema")
+
+  if (document.documentElement.classList.contains("darkmode")) {
+    icone.textContent = "light_mode"
+  } else {
+    icone.textContent = "dark_mode"
+  }
+}

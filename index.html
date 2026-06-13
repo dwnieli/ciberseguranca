@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Segurança</title>
+    <title>Cybersegurança</title>
 
     <!-- icones -->
     <script src="https://kit.fontawesome.com/870a34a90c.js" crossorigin="anonymous"></script>
@@ -13,11 +13,17 @@
 
     <!-- estilos -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/darkmode.css">
 
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -33,14 +39,14 @@
                 <a href=""><i class="fa-solid fa-house"></i>Página Inicial</a>
                 <a href="./pages/sobre.html"><i class="fa-solid fa-users"></i>Sobre o grupo</a>
                 <a href="./pages/contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
-                <a href="./pages/seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de Senhas</a>
+                <a href="./pages/seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
             </div>
 
             <div class="funcoes">
-                <span class="material-symbols-outlined" onclick="">text_increase</span>
-                <span class="material-symbols-outlined" onclick="">rotate_auto</span>
-                <span class="material-symbols-outlined" onclick="">text_decrease</span>
-                <span class="material-symbols-outlined" onclick="">dark_mode</span>
+                <span class="material-symbols-outlined" onclick="aumentarFonte()">text_increase</span>
+                <span class="material-symbols-outlined" onclick="fonteNormal()">rotate_auto</span>
+                <span class="material-symbols-outlined" onclick="diminuirFonte()">text_decrease</span>
+                <span class="material-symbols-outlined mudarTema" onclick="mudarTema()">dark_mode</span>
             </div>
         </nav>
     </aside>
@@ -49,7 +55,7 @@
         <section>
 
             <article>
-                <h1 class="tituloIndex">Cyber Segurança</h1>
+                <h1 class="tituloIndex">Cybersegurança</h1>
                 <p>
                     A cibersegurança é o conjunto de práticas e tecnologias usadas para proteger computadores, redes,
                     sistemas e dados contra ataques, roubos ou danos causados por pessoas mal-intencionadas. Na prática,
@@ -77,6 +83,7 @@
         </section>
     </main>
 
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

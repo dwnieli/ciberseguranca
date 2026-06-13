@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,24 +13,45 @@
 
     <!-- estilos -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/darkmode.css">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar">
         <div>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
-            <a href="">Link</a>
+            <a href="../index.html"><i class="fa-solid fa-house"></i>Página inicial</a>
+            <a href="./sobre.html"><i class="fa-solid fa-users"></i>Sobre</a>
+            <a href="./contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
+            <a href="./seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
         </div>
 
         <div class="botoes">
-            <span class="material-symbols-outlined">text_increase</span>
-            <span class="material-symbols-outlined">rotate_auto</span>
-            <span class="material-symbols-outlined">text_decrease</span>
-            <span class="material-symbols-outlined">dark_mode</span>
+            <span class="material-symbols-outlined" onclick="aumentarFonte()">text_increase</span>
+            <span class="material-symbols-outlined" onclick="fonteNormal()">rotate_auto</span>
+            <span class="material-symbols-outlined" onclick="diminuirFonte()">text_decrease</span>
+            <span class="material-symbols-outlined mudarTema" onclick="mudarTema()">dark_mode</span>
         </div>
 
     </nav>
-    
+
+    <main>
+        <h1 class="title"></h1>
+
+
+        <a href="./content2.html">Próximo conteúdo<i class="fa-solid fa-angles-right"></i></a>
+    </main>
+
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
