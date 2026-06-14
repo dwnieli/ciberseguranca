@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,9 @@
     <script src="https://kit.fontawesome.com/870a34a90c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
-
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
+        <text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+        
     <!-- estilos -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/darkmode.css">
@@ -28,11 +30,10 @@
 
 <body>
     <nav class="navbar">
-        <div>
-            <a href="../index.html"><i class="fa-solid fa-house"></i>Página Inicial</a>
-            <a href="./sobre.html"><i class="fa-solid fa-users"></i>Sobre</a>
-            <a href="./contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
-        </div>
+        <a href="../index.html"><i class="fa-solid fa-house"></i>Página Inicial</a>
+        <a href="./sobre.html"><i class="fa-solid fa-users"></i>Sobre o grupo</a>
+        <a href="./contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
+        <a href="./seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
 
         <div class="botoes">
             <span class="material-symbols-outlined" onclick="aumentarFonte()">text_increase</span>
@@ -42,20 +43,23 @@
         </div>
     </nav>
 
-    <main>
+    <main class="centerMain">
         <h1 class="title">Gerador de senhas</h1>
         <p class="senhap">Clique para gerar uma senha forte aleatória</p>
         <span class="password" id="password" onclick="gerarSenha()">***********</span>
         <div class="botaocopiar">
             <button id="copiar" onclick="copiarSenha()">Copiar senha</button>
+            <button id="limpar" onclick="limparSenha()">Limpar</button>
         </div>
     </main>
 
-    <div>
-        <footer>© Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1</footer>
-    </div>
+    <footer class="footer">
+        © Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1
+    </footer>
 
     <script src="../js/script.js"></script>
+
 </body>
+
 
 </html>

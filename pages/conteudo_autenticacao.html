@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Autenticação</title>
 
     <!-- icones -->
     <script src="https://kit.fontawesome.com/870a34a90c.js" crossorigin="anonymous"></script>
@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>
         <text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
-        
+
     <!-- estilos -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/darkmode.css">
@@ -42,48 +42,42 @@
             <span class="material-symbols-outlined mudarTema" onclick="mudarTema()">dark_mode</span>
         </div>
     </nav>
+    <nav class="subnav">
+        <a href="./conteudo_pense.html">Pense antes de postar</a>
+        <a href="./conteudo_exposicao.html">Controle sua exposição</a>
+        <a href="./conteudo_proteja.html">Proteja sua conta</a>
+        <a href="./conteudo_falsas.html">Informações falsas</a>
+        <a href="./conteudo_links.html">Links suspeitos</a>
+        <a href="./conteudo_phishing.html">Phishing</a>
+        <a href="./conteudo_autenticacao.html">Autenticação</a>
+        <a href="./conteudo_senhas.html">Senhas</a>
+    </nav>
 
-    <main class="contatoMain"></main>
-    <h1 class="title">Contato</h1>
+    <main class="centerMain">
+        <section>
+            <article>
+                <h1>Proteção Contra Golpes e Segurança Digital</h1>
+                <h2>Use autenticação forte</h2>
+                <p>
+                    O uso de apenas senha não é suficiente para garantir segurança. A autenticação
+                    em duas etapas adiciona uma camada extra de proteção.
+                </p>
+                <ul>
+                    <li>Ative verificação em duas etapas</li>
+                    <li>Utilize métodos seguros como aplicativos de autenticação</li>
+                    <li>Evite usar SMS quando houver opções mais seguras</li>
+                </ul>
+            </article>
+        </section>
 
-    <form>
-        <div class="form">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome.">
-        </div>
-
-        <div class="form">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" placeholder="(00) 0 0000-0000">
-        </div>
-
-        <div class="form">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="seuemail@exemplo.com">
-        </div>
-
-        <div class="form">
-            <label for="text">Sua mensagem:</label>
-            <textarea id="text" rows="5" placeholder="Digite sua mensagem aqui."></textarea>
-        </div>
-
-        <div class="form">
-            <label for="arquivo">Anexar arquivo <i>(opcional):</i></label>
-            <input type="file" id="arquivo">
-        </div>
-
-        <div class="botoes">
-            <button type="submit" onclick="alert('Página em construção.')">Enviar</button>
-            <button type="reset">Limpar</button>
-        </div>
-    </form>
     </main>
 
-    <footer class="footer">
-        © Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1
+    <footer class="referencia">
+        <p>Conteúdo baseado na Cartilha de Segurança para Internet do CERT.br.</p>
     </footer>
 
     <script src="../js/script.js"></script>
+
 </body>
 
 </html>
