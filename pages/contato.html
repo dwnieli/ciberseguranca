@@ -28,11 +28,10 @@
 
 <body>
     <nav class="navbar">
-        <div>
-            <a href="../index.html"><i class="fa-solid fa-house"></i>Página inicial</a>
-            <a href="./sobre.html"><i class="fa-solid fa-users"></i>Sobre</a>
-            <a href="./seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
-        </div>
+        <a href="../index.html"><i class="fa-solid fa-house"></i>Página Inicial</a>
+        <a href="./sobre.html"><i class="fa-solid fa-users"></i>Sobre o grupo</a>
+        <a href="./contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
+        <a href="./seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
 
         <div class="botoes">
             <span class="material-symbols-outlined" onclick="aumentarFonte()">text_increase</span>
@@ -40,48 +39,47 @@
             <span class="material-symbols-outlined" onclick="diminuirFonte()">text_decrease</span>
             <span class="material-symbols-outlined mudarTema" onclick="mudarTema()">dark_mode</span>
         </div>
-
     </nav>
 
-    <main>
-        <h1 class="title">Contato</h1>
+    <main class="contatoMain"></main>
+    <h1 class="title">Contato</h1>
 
-        <form>
-            <div class="form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome.">
-            </div>
+    <form>
+        <div class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome.">
+        </div>
 
-            <div class="form">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" placeholder="(00) 0 0000-0000">
-            </div>
+        <div class="form">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(00) 0 0000-0000">
+        </div>
 
-            <div class="form">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="seuemail@exemplo.com">
-            </div>
+        <div class="form">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="seuemail@exemplo.com">
+        </div>
 
-            <div class="form">
-                <label for="text">Sua mensagem:</label>
-                <textarea id="text" rows="5" placeholder="Digite sua mensagem aqui."></textarea>
-            </div>
+        <div class="form">
+            <label for="text">Sua mensagem:</label>
+            <textarea id="text" rows="5" placeholder="Digite sua mensagem aqui."></textarea>
+        </div>
 
-            <div class="form">
-                <label for="arquivo">Anexar arquivo <i>(opcional):</i></label>
-                <input type="file" id="arquivo">
-            </div>
+        <div class="form">
+            <label for="arquivo">Anexar arquivo <i>(opcional):</i></label>
+            <input type="file" id="arquivo">
+        </div>
 
-            <div class="botoes">
-                <button type="submit" onclick="alert('Página em construção.')">Enviar</button>
-                <button type="reset">Limpar</button>
-            </div>
-        </form>
+        <div class="botoes">
+            <button type="submit" onclick="alert('Página em construção.')">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
     </main>
 
-    <div>
-        <footer>© Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1</footer>
-    </div>
+    <footer class="footer">
+        © Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1
+    </footer>
 
     <script src="../js/script.js"></script>
 </body>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersegurança</title>
+    <title>Cibersegurança</title>
 
-    <!-- icones -->
+    <!-- ícones -->
     <script src="https://kit.fontawesome.com/870a34a90c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
@@ -19,27 +19,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
+
+    <!-- MENU LATERAL -->
     <aside>
+
         <span class="iconeIndex">
             <img src="./assets/icone.png" alt="Ícone de computador" width="200px">
         </span>
+
         <hr>
 
         <nav>
+
             <div class="paginas">
-                <a href=""><i class="fa-solid fa-house"></i>Página Inicial</a>
-                <a href="./pages/sobre.html"><i class="fa-solid fa-users"></i>Sobre o grupo</a>
-                <a href="./pages/contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
-                <a href="./pages/seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
+                <a href="./index.html"><i class="fa-solid fa-house"></i> Página Inicial</a>
+                <a href="./pages/sobre.html"><i class="fa-solid fa-users"></i> Sobre o grupo</a>
+                <a href="./pages/contato.html"><i class="fa-solid fa-address-card"></i> Contato</a>
+                <a href="./pages/seguranca.html"><i class="fa-solid fa-lock"></i> Gerador de senhas</a>
             </div>
 
             <div class="funcoes">
@@ -48,42 +49,68 @@
                 <span class="material-symbols-outlined" onclick="diminuirFonte()">text_decrease</span>
                 <span class="material-symbols-outlined mudarTema" onclick="mudarTema()">dark_mode</span>
             </div>
+
         </nav>
+
     </aside>
 
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="mainIndex">
-        <section>
 
+        <header>
+            <h1 class="tituloIndex">Cibersegurança</h1>
+            <p class="subtitulo">
+                Proteja seus dados, sua privacidade e sua presença digital.
+            </p>
+        </header>
+
+        <section>
             <article>
-                <h1 class="tituloIndex">Cybersegurança</h1>
                 <p>
-                    A cibersegurança é o conjunto de práticas e tecnologias usadas para proteger computadores, redes,
-                    sistemas e dados contra ataques, roubos ou danos causados por pessoas mal-intencionadas. Na prática,
-                    isso envolve coisas como senhas fortes, antivírus, firewalls e cuidado ao clicar em links suspeitos.
-                    Ela é importante porque, hoje em dia, quase tudo está conectado à internet — desde contas bancárias
-                    e informações pessoais até sistemas de empresas e órgãos públicos. Sem proteção adequada, essas
-                    informações podem ser roubadas, sequestradas ou destruídas, causando prejuízos financeiros,
-                    vazamento de dados sensíveis e até riscos à segurança de pessoas e organizações. Por isso, investir
-                    em cibersegurança é essencial para manter a confiança, a privacidade e o funcionamento seguro do
-                    mundo digital.
+                    A cibersegurança é o conjunto de práticas e tecnologias utilizadas para proteger
+                    computadores, redes, sistemas e dados contra ataques, roubos ou danos causados
+                    por agentes mal-intencionados.
+                    Na prática, isso envolve o uso de senhas fortes, softwares de proteção,
+                    firewalls e cuidados ao acessar links e arquivos suspeitos. Com o aumento do uso
+                    da internet no cotidiano, essas medidas se tornam cada vez mais essenciais.
+                </p>
+
+                <p>
+                    Atualmente, grande parte das atividades — como operações bancárias, comunicação
+                    e armazenamento de dados — ocorre no ambiente digital. Sem proteção adequada,
+                    essas informações podem ser comprometidas, causando prejuízos financeiros,
+                    vazamento de dados sensíveis e riscos à segurança de pessoas e organizações.
+                    Por isso, investir em cibersegurança é fundamental para garantir a privacidade,
+                    a integridade das informações e o funcionamento seguro do mundo digital.
                 </p>
             </article>
         </section>
 
         <section>
             <article class="content">
+
                 <div>
-                    <a href="./pages/content1.html" target="_blank">Conteúdo 1</a>
+                    <a href="./pages/content1.html">Conteúdo 1</a>
                 </div>
 
                 <div>
-                    <a href="./pages/content2.html" target="_blank">Conteúdo 2</a>
+                    <a href="./pages/content2.html">Conteúdo 2</a>
                 </div>
+
             </article>
         </section>
     </main>
 
-    <script src="./js/script.js"></script>
+
+    <!-- RODAPÉ -->
+    <footer class="referencia">
+        <p>
+            Conteúdo baseado na Cartilha de Segurança para Internet do CERT.br.
+        </p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
 </body>
 
 </html>
