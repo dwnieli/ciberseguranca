@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Sobre o grupo</title>
 
-    <!-- icones -->
+    <!-- ícones -->
     <script src="https://kit.fontawesome.com/870a34a90c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL,GRAD@400,0,0" />
@@ -19,21 +19,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
-
 </head>
 
-<body>
+<body class="sobrePage">
+
     <nav class="navbar">
-        <div>
-            <a href="../index.html"><i class="fa-solid fa-house"></i>Página Inicial</a>
-            <a href="./contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
-            <a href="./seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
-        </div>
+        <a href="../index.html"><i class="fa-solid fa-house"></i>Página Inicial</a>
+        <a href="./sobre.html"><i class="fa-solid fa-users"></i>Sobre o grupo</a>
+        <a href="./contato.html"><i class="fa-solid fa-address-card"></i>Contato</a>
+        <a href="./seguranca.html"><i class="fa-solid fa-lock"></i>Gerador de senhas</a>
 
         <div class="botoes">
             <span class="material-symbols-outlined" onclick="aumentarFonte()">text_increase</span>
@@ -43,44 +39,71 @@
         </div>
     </nav>
 
-    <main>
-        <h1 class="title">Sobre o grupo</h1>
+    <main class="sobreMain">
+        <h1 class="aboutTitle">Sobre o grupo</h1>
 
         <section class="about">
-            <article class="perfil">
+
+            <article class="card">
                 <div class="foto">
-                    <img src="..//assets/danipfp.jpg" alt="Foto de Daniéli">
+                    <img src="../assets/ana.jpg" alt="Foto de Ana Cláudia Tasso">
                 </div>
+<<<<<<< HEAD
                 <h1>Daniéli V. Narciso</h1>
                 <p>Análise e Desenvolvimento de Sistemas - UPF<br>Desenvolvimento Front-End</p>
+=======
+                <p>Ana Cláudia Tasso<br>
+                   ADS - UPF<br>
+                   Back-End Developer</p>
+
+>>>>>>> 591659267ef5c695deb4cb796fdbe04f2812653d
                 <div class="links">
-                    <a href="https://github.com/dwnieli"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/danielinarciso"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="mailto:danivnarciso@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="#" aria-label="GitHub de Ana Cláudia Tasso"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn de Ana Cláudia Tasso"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="E-mail de Ana Cláudia Tasso"><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </article>
 
-            <article>
-                <!-- ana -->
+            <article class="card">
                 <div class="foto">
-                    <img src="">
+                    <img src="../assets/danipfp.jpg" alt="Foto de Daniéli V. Narciso">
+                </div>
+                <p>Daniéli V. Narciso<br>
+                   ADS - UPF<br>
+                   Desenvolvimento Front-End</p>
+
+                <div class="links">
+                    <a href="https://github.com/dwnieli" aria-label="GitHub de Daniéli V. Narciso"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/danielinarciso" aria-label="LinkedIn de Daniéli V. Narciso"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:danivnarciso@gmail.com" aria-label="E-mail de Daniéli V. Narciso"><i
+                            class="fa-regular fa-envelope"></i></a>
                 </div>
             </article>
 
-            <article>
-                <!-- glau -->
+            <article class="card">
                 <div class="foto">
-                    <img src="">
+                    <img src="../assets/glaucia.jpg" alt="Foto de Gláucia Carine Tasso">
+                </div>
+                <p>Gláucia Carine Tasso<br>
+                   ADS - UPF<br>
+                   Back-End Developer</p>
+
+                <div class="links">
+                    <a href="#" aria-label="GitHub de Gláucia Carine Tasso"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn de Gláucia Carine Tasso"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="E-mail de Gláucia Carine Tasso"><i class="fa-regular fa-envelope"></i></a>
                 </div>
             </article>
-
 
         </section>
     </main>
 
-    <div>
-        <footer>© Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1</footer>
-    </div>
+    <footer class="footer">
+        © Ana Cláudia Tasso, Daniéli Narciso, Gláucia Carine Tasso - ADS UPF 2026/1
+    </footer>
 
     <script src="../js/script.js"></script>
 </body>

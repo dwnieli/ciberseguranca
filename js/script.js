@@ -1,5 +1,4 @@
 // gerador de senha
-
 function gerarSenha() {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%&-+=/*';
   const comprimento = 16;
@@ -11,7 +10,6 @@ function gerarSenha() {
 
   document.getElementById('password').textContent = senha;
 }
-
 
 function copiarSenha() {
   const senha = document.getElementById('password').textContent;
@@ -26,7 +24,16 @@ function copiarSenha() {
 
 
 // fontes
+function limparSenha() {
+  document.getElementById('password').textContent = '***********';
 
+  const btn = document.getElementById('copiar');
+  if (btn) {
+    btn.textContent = 'Copiar senha';
+  }
+}
+
+// fontes
 function aumentarFonte() {
   document.documentElement.classList.remove("textoNormal", "diminuirTexto")
   document.documentElement.classList.add("aumentarTexto")
@@ -42,9 +49,7 @@ function diminuirFonte() {
   document.documentElement.classList.add("diminuirTexto")
 }
 
-
 // darkmode
-
 function mudarTema() {
   document.documentElement.classList.toggle("darkmode")
 
