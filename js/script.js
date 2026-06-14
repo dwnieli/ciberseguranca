@@ -24,6 +24,7 @@ function copiarSenha() {
   });
 }
 
+
 // fontes
 
 function aumentarFonte() {

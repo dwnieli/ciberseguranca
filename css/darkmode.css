@@ -1,0 +1,31 @@
+.darkmode body {
+    background-color: #17191d;
+}
+
+.darkmode .title {
+    color: #f0ffff;
+}
+
+.darkmode .tituloIndex {
+    color: #f0ffff;
+}
+
+.darkmode .mainIndex p {
+    color: #f0ffff;
+}
+
+.darkmode .content a {
+    border: #f0ffff solid 3px;
+}
+
+.darkmode .senhap {
+    color: #f0ffff;
+}
+
+.darkmode label {
+    color: #f0ffff;
+}
+
+.darkmode .perfil {
+    color: #f0ffff;
+}
